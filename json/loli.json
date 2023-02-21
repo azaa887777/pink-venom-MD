@@ -1,16 +1,4 @@
-import fetch from 'node-fetch'
-
-let handler = async (m, { conn, text }) => {
-let url = loli[Math.floor(Math.random() * loli.length)]
-await conn.sendButtonImg(m.chat, url, '_Result :_ random loli', 'By Arifzyn', 'Next', '.loli', m)
-}
-handler.command = /^(loli)$/i
-handler.tags = ['anime']
-handler.help = ['loli']
-handler.limit = true
-export default handler
-
-global.loli = [
+[
   "https://i.imgur.com/cvqoK7l.jpg",
   "https://i.imgur.com/r1rm2ry.jpg",
   "https://i.imgur.com/8XO7t9a.jpg",
